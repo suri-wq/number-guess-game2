@@ -1,0 +1,62 @@
+body{
+    display: block;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;;
+    background-image: url("https://cdn.prod.website-files.com/5ddea854c6438680c98a678d/5e13f12c3be8f673248b3a92_Drinks_1.jpg");
+    background-repeat:round;
+}
+
+#container{
+    width: 300px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+}
+.title-h1{
+    color: gold;
+    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2cxcTAybm1jeGN5amU4eXBsZzFqcGRxMGhhMmFzYWc2djVheW84eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kPAr2dQBjvOiuiRDQf/giphy.gif");
+    height:100px;
+    background-position: center;
+}
+
+#input-area{
+    margin-top:20px;
+    display: inline-flex;
+}
+
+#result-area{
+    background-color: antiquewhite;
+    height:100px;
+    text-align: center;
+    padding: 50px;
+}
+
+
+#num-area{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#submitBtn,#resetBtn{
+    width:100px;
+    height:100px;
+    font-size: 20px;
+    background-color: deepskyblue;
+}
+
+
+@media screen and (max-width: 580px) {
+    #num-area, #submitBtn, #resetBtn{
+        width: 100%;
+        margin-top: 10px;
+        border: 0px;
+    }
+    #input-area{
+        display: block;
+    }
+  }
+
