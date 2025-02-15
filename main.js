@@ -4,7 +4,7 @@ let chanceTxt = document.getElementById("chance-txt")
 let userInput = document.getElementById("num-area")
 let submitBtn = document.getElementById("submitBtn")
 let resetBtn = document.getElementById("resetBtn")
-let chance = 5;
+let chance = 3;
 let history = [];
 let gameOver = false;
 
@@ -17,7 +17,7 @@ function comGenerate(){
 }
 
 comGenerate()
-chanceTxt.textContent = `You have ${chance} chance(s)`
+chanceTxt.textContent = `You have ${chance} chance(s). (and the answer is ${comInput})`
 
 function Rules(){
     userValue = userInput.value
@@ -34,7 +34,7 @@ function Rules(){
         return
     }
     chance --;
-    chanceTxt.textContent = `You have ${chance} chance(s)`
+    chanceTxt.textContent = `You have ${chance} chance(s). (and the answer is ${comInput})`
     history.push(userValue)
     console.log(history)
     userInput.value = "";
@@ -66,10 +66,11 @@ function reset(){
     gameOver = false;
     userInput.value = "";
     resultTxt.textContent="Result"
-    chance = 5;
-    chanceTxt.textContent = `You have ${chance} chance(s)`
+    chance = 3;
     submitBtn.disabled=false;
     history = [];
     comGenerate()
+    chanceTxt.textContent = `You have ${chance} chance(s). (and the answer is ${comInput})`
+
 
 }
